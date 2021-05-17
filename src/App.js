@@ -1,7 +1,9 @@
-import NavBar from "./NavBar";
-import Home from "./Home";
-import About from "./About";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { SongProvider } from "./context/useContext";
+
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <SongProvider>
+                <Home />
+              </SongProvider>
             </Route>
             <Route path="/about">
               <About />

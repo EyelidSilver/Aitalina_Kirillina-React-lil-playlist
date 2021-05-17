@@ -71,3 +71,19 @@ form {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
 }
+
+.genreButtons{
+/* display: flex;
+max-width: 400px;
+justify-content: space-between; */
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 10px;
+}
+
+
+.genreFilterBtn{
+margin: 0 10px;
+}
