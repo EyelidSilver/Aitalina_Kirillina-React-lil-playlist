@@ -1,34 +1,31 @@
-import {
-  useState,
-  // useEffect
-} from "react";
+import { useState } from "react";
 import SongList from "./SongList";
 import NewSongForm from "./NewSongForm";
 import CategoriesTable from "./CategoriesTable";
 
 const Home = () => {
   const [songs, setSongs] = useState([
-    {
-      title: "Alien",
-      artist: "Lebanon Hanover",
-      genre: "dark wave",
-      rating: "4",
-      id: 1,
-    },
-    {
-      title: "Pure Feeling",
-      artist: "Florence + the Machine",
-      genre: "Indie",
-      rating: "5",
-      id: 2,
-    },
-    {
-      title: "Born to Die",
-      artist: "Lana Del Rey",
-      genre: "Indie",
-      rating: "3",
-      id: 3,
-    },
+    // {
+    //   title: "Alien",
+    //   artist: "Lebanon Hanover",
+    //   genre: "dark wave",
+    //   rating: "4",
+    //   id: 1,
+    // },
+    // {
+    //   title: "Pure Feeling",
+    //   artist: "Florence + the Machine",
+    //   genre: "Indie",
+    //   rating: "5",
+    //   id: 2,
+    // },
+    // {
+    //   title: "Born to Die",
+    //   artist: "Lana Del Rey",
+    //   genre: "Indie",
+    //   rating: "3",
+    //   id: 3,
+    // },
   ]);
 
   const handleDelete = (id) => {
@@ -70,15 +67,11 @@ const Home = () => {
         artist: artist,
         genre: genre,
         rating: rating,
-        id: Math.random() * 1000,
+        id: id,
       },
     ]);
     emptyStates();
   };
-
-  //   useEffect(() => {
-  //     console.log("use effect");
-  //   }, [songs.title]);
 
   return (
     <div className="home">

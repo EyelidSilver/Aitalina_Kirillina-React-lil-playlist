@@ -1,7 +1,7 @@
 const SongList = ({ songs, title, handleDelete }) => {
   return (
     <div className="song-list">
-      {/* <h2>{title}</h2> */}
+      <h2>{title}</h2>
       {songs.map((song) => (
         <div className="song-preview" key={song.id}>
           <h2>{song.title}</h2>
