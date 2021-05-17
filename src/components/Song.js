@@ -14,9 +14,8 @@ const Song = ({song}) => {
       <p>{song.artist}</p>
       <p>{song.genre}</p>
       <p>{song.rating}</p>
-      <button className="deleteBtn"
-       onClick={() => handleDelete(song.id)}>
-        delete
+      <button className="deleteBtn" onClick={() => handleDelete(song.id)}>
+        <span className="material-icons">delete</span>
       </button>
     </div>
   );

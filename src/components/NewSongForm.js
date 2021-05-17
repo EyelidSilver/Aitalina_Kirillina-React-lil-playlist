@@ -11,10 +11,10 @@ const NewSongForm = ({
 }) => {
   return (
     <div className="songForm">
-      <hr />
       <br />
       <form onSubmit={handleSubmit}>
         <input
+          className="inputStyle"
           type="text"
           required
           placeholder="title"
@@ -23,6 +23,7 @@ const NewSongForm = ({
           onChange={onChangeTitle}
         />
         <input
+          className="inputStyle"
           type="text"
           required
           placeholder="artist"
@@ -32,6 +33,7 @@ const NewSongForm = ({
         />
         <label htmlFor="genre">
           <select
+            className="inputStyle"
             name="genre"
             value={valueGenre}
             onChange={onChangeGenre}
@@ -47,6 +49,7 @@ const NewSongForm = ({
         </label>
         <label htmlFor="rating">
           <select
+            className="inputStyle"
             name="rating"
             value={valueRating}
             onChange={onChangeRating}
@@ -61,10 +64,8 @@ const NewSongForm = ({
             <option value="5">5</option>
           </select>
         </label>
-        <button>Add song </button>
+        <button className="addSongBtn">Add song </button>
       </form>
-      <br />
-      <hr />
       <br />
     </div>
   );
