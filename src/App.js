@@ -4,7 +4,6 @@ import About from "./components/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { SongProvider } from "./context/useContext";
 
-
 function App() {
   return (
     <Router>

@@ -20,7 +20,8 @@ const SongList = ({ songs, resetSongsToFilter, setStatus, songsToFilter }) => {
     <div className="song-list">
       <div className="genreButtons">
         {filterGenre.map((genre, index) => (
-          <button className="genreFilterBtn"
+          <button
+            className="genreFilterBtn"
             key={index}
             onClick={handleFilterButton}
           >

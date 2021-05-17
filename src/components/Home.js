@@ -100,7 +100,13 @@ function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const song = { title, artist, genre, rating, id };
+    const song = {
+      title,
+      artist,
+      genre,
+      rating,
+      id,
+    };
     console.log(song);
     setSongs([
       ...songs,
@@ -127,15 +133,14 @@ function Home() {
         valueArtist={valueArtist}
         valueGenre={valueGenre}
         valueRating={valueRating}
-      />
+      />{" "}
       <SongList
         songs={songs}
         title="All songs"
         setStatus={setStatus}
         resetSongsToFilter={resetSongsToFilter}
         songsToFilter={songsToFilter}
-      />
-       
+      />{" "}
     </div>
   );
 }

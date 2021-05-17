@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { SongContext } from "../context/useContext";
 
-const Song = ({song}) => {
+const Song = ({ song }) => {
   const [songs, setSongs] = useContext(SongContext);
 
   const handleDelete = () => {
@@ -19,6 +19,6 @@ const Song = ({song}) => {
       </button>
     </div>
   );
-}
+};
 
 export default Song;
