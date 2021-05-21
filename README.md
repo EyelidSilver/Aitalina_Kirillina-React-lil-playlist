@@ -1,3 +1,8 @@
+# Playlist React App 
+
+![Schermafbeelding 2021-05-21 om 16 11 31](https://user-images.githubusercontent.com/67955300/119151294-89ae0d00-ba4f-11eb-8b9e-d0e971a4e7ec.png)
+![Schermafbeelding 2021-05-21 om 16 11 50](https://user-images.githubusercontent.com/67955300/119151297-8a46a380-ba4f-11eb-9cc8-bfc281214731.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
