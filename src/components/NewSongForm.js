@@ -33,11 +33,11 @@ const NewSongForm = ({
         />
         <label htmlFor="genre">
           <select
+            required
             className="inputStyle"
             name="genre"
             value={valueGenre}
             onChange={onChangeGenre}
-            required
           >
             <option value="genre">--genre--</option>
             <option value="indie">indie</option>
@@ -49,11 +49,11 @@ const NewSongForm = ({
         </label>
         <label htmlFor="rating">
           <select
+            required
             className="inputStyle"
             name="rating"
             value={valueRating}
             onChange={onChangeRating}
-            required
           >
             <option value="--">--</option>
             <option value="0">0</option>
