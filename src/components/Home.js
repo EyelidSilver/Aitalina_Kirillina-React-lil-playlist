@@ -18,10 +18,6 @@ function Home() {
     }
   };
 
-  useEffect(() => {
-    getLocalSongs();
-  }, []);
-
   const [songsToFilter, setSongsToFilter] = useState([]);
 
   const [status, setStatus] = useState("all");
@@ -60,15 +56,18 @@ function Home() {
   //USE EFFECT
   useEffect(() => {
     getLocalSongs();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     saveLocalSongs();
     setSongsToFilter(songs);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [songs]);
 
   useEffect(() => {
     handleFilter();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status]);
 
   const resetSongsToFilter = () => {
